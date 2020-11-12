@@ -39,6 +39,7 @@ public class Error {
     driver.findElement(By.xpath("//div[2]/div[2]")).click();
     driver.findElement(By.xpath("//form/button")).click();
     driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+    
 
   }
 

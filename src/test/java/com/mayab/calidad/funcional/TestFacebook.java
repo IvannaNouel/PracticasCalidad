@@ -33,7 +33,7 @@ public class TestFacebook {
     // ERROR: Caught exception [ERROR: Unsupported command [doubleClick | id=email | ]]
     driver.findElement(By.id("email")).click();
     driver.findElement(By.id("email")).clear();
-    driver.findElement(By.id("email")).sendKeys("ivannamarcelle@gmail.com");
+    driver.findElement(By.id("email")).sendKeys("ivannamarcelle@hotmail.com");
     driver.findElement(By.xpath("//div[@id='content']/div/div")).click();
     driver.findElement(By.id("pass")).click();
     driver.findElement(By.id("pass")).click();
