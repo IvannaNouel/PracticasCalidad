@@ -23,6 +23,9 @@ public class TestFacebook {
 	    driver = new ChromeDriver();
 	    baseUrl = "https://www.google.com/";
     driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+    
+    
+    
   }
 
   @Test

@@ -33,10 +33,13 @@ public class AlumnoDAOOracle implements DAO {
 	public Connection getConnection() {
 		Connection con=null;  
         try{  
-            Class.forName("oracle.jdbc.driver.OracleDriver");  
-            con=DriverManager.getConnection("jdbc:hr:hr@//localhost:1521/xepdb1","system","hr");  
+            Class.forName("oracle.jdbc.driver.OracleDriver"); 
+            con=DriverManager.getConnection("root@35aec6099f7f:/# ./startdb.sh\r\n","dbunit","dbunit");
+            System.out.println("Connected");
         }catch(Exception e){System.out.println(e);}  
         return con;  
+        
 	}
+	
 
 }

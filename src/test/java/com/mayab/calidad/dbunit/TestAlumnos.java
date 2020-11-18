@@ -21,7 +21,7 @@ public class TestAlumnos {
 	@Before
 	public void beforeTest() {
 		alumnosDB = mock(DAOFake.class);
-		alumno =  new Alumno(2, "Melissa", 20, 9.5, "Melissa@gmail.com");
+		alumno =  new Alumno(2, "Ivanna", 20, 6.5, "ivannamarcelle@gmail.com");
 		setupHashMap();
 	}
 	
