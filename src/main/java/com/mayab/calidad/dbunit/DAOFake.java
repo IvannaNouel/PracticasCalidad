@@ -11,8 +11,8 @@ public class DAOFake implements DAO{
 		return false;
 	}
 
-	public void deleteAlumno(Alumno a) {
-		alumnosHashMap.remove(a.getId());
+	public void deleteAlumno(int id) {
+		alumnosHashMap.remove(id);
 		
 	}
 

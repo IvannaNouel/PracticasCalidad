@@ -4,7 +4,7 @@ public interface DAO {
 	
 	boolean addAlumno(Alumno a);
 	
-	void deleteAlumno(Alumno a);
+	void deleteAlumno(int id);
 	
 	void updatePromedio(Alumno a, double nuevoPromedio);
 	
