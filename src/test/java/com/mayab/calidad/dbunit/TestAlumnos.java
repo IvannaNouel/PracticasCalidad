@@ -79,15 +79,9 @@ public class TestAlumnos extends DBTestCase {
 		
 		alumnosDB.deleteAlumno(alumno.getId());
 				try {
-			IDataSet dDS = getConnection().createDataSet();
-			
-			ITable table = dDS.getTable("alumno");
-			
-			IDataSet expectedDS = new FlatXmlDataSetBuilder().build(new File("src/test/mock-data/alumnos-mock.xml"));
-			ITable expectedT = expectedDS.getTable("alumno");
-			
-			Assertion.assertEquals(expectedT, table);
-			
+					Alumno result = alumnosDB.getAlumno(alumno.getId());
+					assertThat(result, is(true));
+					assertThat(alumnosDB.getNumeroAlumnos(), is(3));
 			
 		} catch (Exception e) {
 			// TODO: handle exception
@@ -104,14 +98,11 @@ public class TestAlumnos extends DBTestCase {
 		
 		alumnosDB.updatePromedio(alumno, alumno.getCalificacion());
 				try {
-			IDataSet dDS = getConnection().createDataSet();
+					
+					Alumno result = alumnosDB.getAlumno(alumno.getCalificacion());
+					assertThat(result, is(true));
+					assertThat(alumnosDB.getNumeroAlumnos(), is(3));
 			
-			ITable table = dDS.getTable("alumno");
-			
-			IDataSet expectedDS = new FlatXmlDataSetBuilder().build(new File("src/test/mock-data/alumnos-mock.xml"));
-			ITable expectedT = expectedDS.getTable("alumno");
-			
-			Assertion.assertEquals(expectedT, table);
 			
 			
 		} catch (Exception e) {

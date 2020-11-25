@@ -10,6 +10,6 @@ public interface DAO {
 	
 	int getNumeroAlumnos();
 	
-	Alumno getAlumno(int id);
+	Alumno getAlumno(double d);
 	
 }

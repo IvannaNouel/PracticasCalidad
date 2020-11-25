@@ -62,7 +62,6 @@ public class AlumnoDAOOracle implements DAO {
 		try {
 			PreparedStatement preparedStatement = con.prepareStatement("UPDATE ALUMNO set grade = ? WHERE  id = ?");
 			
-			ResultSet result = preparedStatement.executeQuery();
 		
 			
 			preparedStatement.setDouble(1, a.getCalificacion());
@@ -116,6 +115,12 @@ public class AlumnoDAOOracle implements DAO {
         }catch(Exception e){System.out.println(e);}  
         return con;  
         
+	}
+
+	@Override
+	public Alumno getAlumno(double d) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 	
 

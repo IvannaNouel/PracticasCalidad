@@ -31,4 +31,10 @@ public class DAOFake implements DAO{
 	public HashMap<Integer, Alumno> getHashMap(){
 		return alumnosHashMap;
 	}
+
+	@Override
+	public Alumno getAlumno(double d) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }
